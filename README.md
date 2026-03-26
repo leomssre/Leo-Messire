@@ -24,6 +24,9 @@ Clique sur un projet pour voir les détails, les images et les vidéos :
 ### 📚 [Projet Lycée (Langage C)](lycee.md)
 *Création d'une aventure textuelle interactive "Livre dont vous êtes le héros".*
 
+### 🌐 [Projet Nexus](nexus.md)
+*Réseau social basé sur l'IA.*
+
 ---
 
 ## 📫 Me contacter
