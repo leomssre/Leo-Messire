@@ -13,4 +13,4 @@ Passionné par les jeux de stratégie, j'ai développé deux programmes complets
 | ![Poker](code_poker.png) | ![Blackjack](code_blackjack.png) |
 
 ---
-[⬅️ Retour à l'accueil](README.md)
+[⬅️ Retour à l'accueil](https://leomssre.github.io/Leo-Messire/)
