@@ -3,51 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Léo</title>
+    <title>Portfolio | Léo (Nexus Edition)</title>
     <style>
-        :root { --primary: #2563eb; --dark: #0f172a; --light: #f8fafc; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
-        
-        nav { background: var(--dark); color: white; padding: 1rem; text-align: center; font-weight: bold; }
+        :root { 
+            --bg-dark: #0b0f1a; /* Fond profond style Nexus */
+            --card-bg: #161e2d; /* Fond des cartes un peu plus clair */
+            --text-main: #e2e8f0; 
+            --accent-blue: #3b82f6; /* Bleu IA */
+            --accent-glow: rgba(59, 130, 246, 0.5);
+        }
 
-        header { height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('visuel_personnage.png'); background-size: cover; background-position: center; color: white; text-align: center; }
-        header h1 { font-size: 3rem; margin: 0; }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            margin: 0; 
+            background: var(--bg-dark); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+        }
+        
+        nav { 
+            background: rgba(11, 15, 26, 0.95); 
+            border-bottom: 1px solid #1e293b;
+            color: white; 
+            padding: 1.2rem; 
+            text-align: center; 
+            font-weight: bold; 
+            letter-spacing: 2px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header { 
+            height: 40vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            background: radial-gradient(circle at center, #1e293b 0%, #0b0f1a 100%);
+            color: white; 
+            text-align: center;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        header h1 { font-size: 3.5rem; margin: 0; text-shadow: 0 0 15px var(--accent-glow); }
 
         .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
         
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; display: flex; flex-direction: column; }
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card { 
+            background: var(--card-bg); 
+            border: 1px solid #2d3748;
+            border-radius: 12px; 
+            overflow: hidden; 
+            transition: 0.4s; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        .card:hover { 
+            transform: translateY(-8px); 
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        
+        .card img { width: 100%; height: 180px; object-fit: cover; filter: brightness(0.8); transition: 0.3s; }
+        .card:hover img { filter: brightness(1); }
         
         .card-content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
-        .card-content h3 { margin-top: 0; color: var(--primary); }
+        .card-content h3 { margin-top: 0; color: var(--accent-blue); font-size: 1.4rem; }
+        .card-content p { color: #94a3b8; font-size: 0.95rem; }
         
-        .btn { display: block; text-align: center; background: var(--primary); color: white; padding: 0.8rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: auto; transition: background 0.3s; }
-        .btn:hover { background: #1d4ed8; }
+        .btn { 
+            display: block; 
+            text-align: center; 
+            background: transparent; 
+            color: var(--accent-blue); 
+            border: 1px solid var(--accent-blue);
+            padding: 0.7rem; 
+            border-radius: 6px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: auto; 
+            transition: 0.3s; 
+        }
+        
+        .btn:hover { 
+            background: var(--accent-blue); 
+            color: white; 
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
 
-        footer { text-align: center; padding: 3rem; background: var(--dark); color: white; margin-top: 4rem; }
+        footer { 
+            text-align: center; 
+            padding: 3rem; 
+            background: #060912; 
+            color: #64748b; 
+            margin-top: 4rem; 
+            border-top: 1px solid #1e293b;
+        }
     </style>
 </head>
 <body>
 
-<nav>MON PORTFOLIO GITHUB</nav>
+<nav>NEXUS INTERFACE PORTFOLIO</nav>
 
 <header>
-    <h1>Léo</h1>
-    <p>Étudiant en Terminale STI2D | Développeur Unreal Engine & Python</p>
+    <h1>LÉO</h1>
+    <p style="color: #60a5fa; font-weight: bold; letter-spacing: 1px;">DÉVELOPPEUR & CONCEPTEUR IA</p>
 </header>
 
 <div class="container">
-    <h2 style="text-align:center; margin-bottom: 3rem;">Mes Projets</h2>
-    
     <div class="grid">
+        <div class="card">
+            <img src="NOM_IMAGE_NAVIGATEUR.png" alt="Nexus IA">
+            <div class="card-content">
+                <h3>🌐 Projet Nexus</h3>
+                <p>Système de navigation intelligent avec interface de connexion et chat IA intégré.</p>
+                <a href="https://github.com/leomssre/Leo-Messire/blob/main/nexus.md" class="btn" target="_blank">ACCÉDER AU TERMINAL</a>
+            </div>
+        </div>
+
         <div class="card">
             <img src="visuel_personnage.png" alt="Dauntless">
             <div class="card-content">
                 <h3>🎮 Projet Dauntless</h3>
-                <p>Reproduction d'un Action-RPG sous Unreal Engine 5. Focus sur les mécaniques de Dash et le système de combat.</p>
-                <a href="https://github.com/leomssre/Leo-Messire/blob/main/dauntless.md" class="btn">Voir les détails & démo</a>
+                <p>Moteur UE5. Reproduction de mécaniques RPG et systèmes de combat via Blueprints.</p>
+                <a href="https://github.com/leomssre/Leo-Messire/blob/main/dauntless.md" class="btn" target="_blank">VOIR LA DÉMO</a>
             </div>
         </div>
 
@@ -55,34 +137,25 @@
             <img src="code_poker.png" alt="Casino">
             <div class="card-content">
                 <h3>🃏 Projet Casino</h3>
-                <p>Simulateur de Poker et Blackjack développé en Python. Gestion des règles et de l'IA.</p>
-                <a href="https://github.com/leomssre/Leo-Messire/blob/main/casino.md" class="btn">Consulter le code</a>
+                <p>Programmation Python. Algorithmes de jeux de cartes et logique de probabilités.</p>
+                <a href="https://github.com/leomssre/Leo-Messire/blob/main/casino.md" class="btn" target="_blank">ANALYSER LE CODE</a>
             </div>
         </div>
 
         <div class="card">
             <img src="code_livre_heros.png" alt="Projet C">
             <div class="card-content">
-                <h3>📚 Projet Lycée</h3>
-                <p>Jeu d'aventure textuel "Livre dont vous êtes le héros" conçu en Langage C (STI2D).</p>
-                <a href="https://github.com/leomssre/Leo-Messire/blob/main/lycee.md" class="btn">Voir la réalisation</a>
+                <h3>📚 Projet Lycée (C)</h3>
+                <p>Architecture de données en C pour une narration interactive type JDR.</p>
+                <a href="https://github.com/leomssre/Leo-Messire/blob/main/lycee.md" class="btn" target="_blank">OUVRIR L'ARCHIVE</a>
             </div>
         </div>
-
-        <div class="card">
-    <img src="Nexus_compte.png" alt="Nexus">
-    <div class="card-content">
-        <h3>🌐 Projet Nexus</h3>
-        <p>Écosystème complet de navigation incluant une IA conversationnelle, un système de connexion sécurisé et une gestion de profil personnalisée.</p>
-        <a href="https://github.com/leomssre/Leo-Messire/blob/main/nexus.md" class="btn" target="_blank">Voir le projet</a>
-    </div>
-</div>
     </div>
 </div>
 
 <footer>
-    <p>📧 leomessire5o@gmail.com</p>
-    <p>Retrouvez-moi sur mon profil GitHub principal</p>
+    <p>Système Portfolio v2.0 - Basé sur Nexus IA</p>
+    <p>Contact : leomessire5o@gmail.com</p>
 </footer>
 
 </body>
