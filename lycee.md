@@ -12,4 +12,4 @@ Projet réalisé dans le cadre de ma formation en **Terminale STI2D**. L'objecti
 ![Capture du code C](code_livre_heros.png)
 
 ---
-[⬅️ Retour à l'accueil](README.md)
+[⬅️ Retour à l'accueil](https://leomssre.github.io/Leo-Messire/)
