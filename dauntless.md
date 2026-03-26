@@ -12,4 +12,4 @@ Suite à la suppression du jeu Dauntless que j’aimais beaucoup, j’ai entrepr
 | ![Visuel](visuel_personnage.png) | ![Code](code_blueprint.png) |
 
 ---
-[⬅️ Retour à l'accueil](README.md)
+[⬅️ Retour à l'accueil](https://leomssre.github.io/Leo-Messire/)
