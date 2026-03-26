@@ -7,15 +7,15 @@ Nexus n'est pas seulement un navigateur, c'est un assistant intelligent conçu p
 ---
 
 ### 🔑 Interface de Connexion
-L'accès à l'écosystème Nexus est sécurisé par une interface moderne, point d'entrée vers la personnalisation de l'IA.
+L'accès à l'écosystème Nexus est sécurisé par une interface moderne et soignée.
 ![Connexion](Nexus_compte.png)
 
 ### 🌍 Le Navigateur IA
-Le cœur du projet : une barre de navigation intelligente capable de comprendre le contexte des recherches.
+Le cœur du projet : une barre de navigation intelligente capable de comprendre le contexte des recherches et y répondre clairement.
 ![Navigateur](Nexus_ia.png)
 
 ### 💬 Système de Conversations
-Une interface de chat intégrée permettant de dialoguer avec l'IA tout en naviguant, sans changer d'onglet.
+Une interface de chat intégrée permettant de dialoguer avec ses amis ou de découvrir de nouvelles personnes dans le salon du pays.
 ![Conversations](Nexus_convo.png)
 
 ### 👤 Gestion du Profil
