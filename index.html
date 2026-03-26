@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Léo (Nexus Edition)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { 
-            --bg-dark: #0b0f1a; /* Fond profond style Nexus */
-            --card-bg: #161e2d; /* Fond des cartes un peu plus clair */
+            --bg-dark: #0b0f1a; 
+            --card-bg: #161e2d; 
             --text-main: #e2e8f0; 
-            --accent-blue: #3b82f6; /* Bleu IA */
+            --accent-blue: #3b82f6; 
             --accent-glow: rgba(59, 130, 246, 0.5);
         }
 
@@ -19,19 +20,31 @@
             background: var(--bg-dark); 
             color: var(--text-main); 
             line-height: 1.6; 
+            scroll-behavior: smooth;
         }
         
         nav { 
             background: rgba(11, 15, 26, 0.95); 
             border-bottom: 1px solid #1e293b;
-            color: white; 
-            padding: 1.2rem; 
+            padding: 1rem; 
             text-align: center; 
-            font-weight: bold; 
-            letter-spacing: 2px;
             position: sticky;
             top: 0;
             z-index: 100;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 1.8rem;
+            transition: 0.3s; 
+            display: inline-block;
+        }
+
+        nav a:hover { 
+            color: var(--accent-blue); 
+            transform: scale(1.1);
+            text-shadow: 0 0 15px var(--accent-glow);
         }
 
         header { 
@@ -106,7 +119,11 @@
 </head>
 <body>
 
-<nav>NEXUS INTERFACE PORTFOLIO</nav>
+<nav>
+    <a href="https://github.com/leomssre/Leo-Messire/blob/main/README.md" title="Voir mon profil GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+</nav>
 
 <header>
     <h1>LÉO</h1>
@@ -116,10 +133,10 @@
 <div class="container">
     <div class="grid">
         <div class="card">
-            <img src="Nexus_profil.png" alt="Nexus IA">
+            <img src="NOM_IMAGE_NAVIGATEUR.png" alt="Nexus IA">
             <div class="card-content">
                 <h3>🌐 Projet Nexus</h3>
-                <p>Système de navigation intelligent avec interface de connexion et chat IA intégré.</p>
+                <p>Écosystème complet de navigation incluant une IA conversationnelle et une gestion de profil personnalisée.</p>
                 <a href="https://github.com/leomssre/Leo-Messire/blob/main/nexus.md" class="btn" target="_blank">ACCÉDER AU TERMINAL</a>
             </div>
         </div>
@@ -154,7 +171,7 @@
 </div>
 
 <footer>
-    <p>Système Portfolio v2.0 - Basé sur Nexus IA</p>
+    <p>Système Portfolio v2.1 - Nexus Edition</p>
     <p>Contact : leomessire5o@gmail.com</p>
 </footer>
 
