@@ -1,7 +1,8 @@
 # 🌐 Projet Nexus : Écosystème de Navigation IA
 
 ### Présentation du Concept
-Nexus n'est pas seulement un navigateur, c'est un assistant intelligent conçu pour centraliser vos interactions numériques. Ce projet explore l'intégration de l'IA au cœur de la navigation quotidienne. (le projet a été hébergé sur un serveur local)
+Nexus n'est pas seulement un navigateur, c'est un assistant intelligent conçu pour centraliser vos interactions numériques. Ce projet explore l'intégration de l'IA au cœur de la navigation quotidienne.
+(Le projet a été hébergé sur un serveur local)
 
 ---
 
