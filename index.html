@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Léo</title>
+    <style>
+        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        nav { background: var(--dark); color: white; padding: 1rem; position: sticky; top: 0; display: flex; justify-content: space-around; z-index: 1000; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        header { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('visuel_personnage.png'); background-size: cover; color: white; text-align: center; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 1.5rem; }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-top: 1rem; }
+        footer { text-align: center; padding: 2rem; background: var(--dark); color: white; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Accueil</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>Léo</h1>
+    <p>Étudiant en Terminale STI2D | Passionné par l'UE5 et Python</p>
+</header>
+
+<div class="container" id="projects">
+    <h2 style="text-align:center">Mes Réalisations</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="visuel_personnage.png" alt="Dauntless">
+            <div class="card-content">
+                <h3>🎮 Projet Dauntless</h3>
+                <p>Reproduction RPG sous Unreal Engine 5 avec système de Dash et Blueprints.</p>
+                <a href="dauntless.md" class="btn">Détails du projet</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="code_poker.png" alt="Casino">
+            <div class="card-content">
+                <h3>🃏 Projet Casino</h3>
+                <p>Jeux de Poker et Blackjack codés en Python avec gestion de logique complexe.</p>
+                <a href="casino.md" class="btn">Voir le code</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="code_livre_heros.png" alt="Projet C">
+            <div class="card-content">
+                <h3>📚 Projet Lycée (C)</h3>
+                <p>Jeu textuel interactif réalisé dans le cadre de mon cursus STI2D.</p>
+                <a href="lycee.md" class="btn">Découvrir</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="contact">
+    <p>Contact : leomessire5o@gmail.com</p>
+    <p>© 2026 Léo - Portfolio GitHub Pages</p>
+</footer>
+
+</body>
+</html>
