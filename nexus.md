@@ -18,7 +18,7 @@ Une interface de chat intégrée permettant de dialoguer avec l'IA tout en navig
 ![Conversations](Nexus_convo.png)
 
 ### 👤 Gestion du Profil
-Un espace dédié à l'utilisateur pour gérer ses préférences, ses historiques et la personnalisation de son modèle IA.
+Un espace dédié à l'utilisateur pour gérer ses préférences, modifier son profil etc.
 ![Profil](Nexus_profil.png)
 
 ---
