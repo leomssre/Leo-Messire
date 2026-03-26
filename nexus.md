@@ -10,6 +10,8 @@ Le projet Nexus est une réalisation axée sur un nouveau type de réseau social
 
 ### Aperçu du projet
 ![Visuel Nexus](Nexus_compte.png)
+### Aperçu du navigateur IA
+![Interface Nexus](Nexus_ia.png)
 
 ---
 [⬅️ Retour à l'accueil](https://leomssre.github.io/Leo-Messire/)
